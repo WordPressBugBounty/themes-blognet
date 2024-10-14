@@ -1,0 +1,64 @@
+/*
+Theme Name: BlogNet
+Theme URI: https://themeansar.com/free-themes/blognet-free-wordpress-theme/
+Author: Themeansar
+Author URI: https://themeansar.com
+Description: Blognet is a fast, clean, modern-looking Best Responsive News Magazine WordPress theme. The theme is fully widgetized, so users can manage the content by using easy to use widgets. Blognet is suitable for dynamic news, newspapers, magazine, publishers, blogs, editors, online and gaming magazines, newsportals,personal blogs, newspaper, publishing or review siteand any creative website. Blognet is SEO friendly, WPML,Gutenberg, translation and RTL ready. Live preview : https://demos.themeansar.com/blogarise/blognet/ and documentation at https://docs.themeansar.com/docs/blogarise/
+Version: 0.4
+Requires PHP: 7.0
+Tested up to: 6.5
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: blogarise
+Text Domain: blognet
+Tags: blog, portfolio, news, grid-Layout, one-column, two-columns, three-columns, flexible-header, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, theme-options, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks
+
+Blognet WordPress Theme is child theme of Newsup, Copyright 2023 Themeansar
+Blognet is distributed under the terms of the GNU General Public License v3
+
+Blognet is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+a:focus {
+    outline: 1px solid;
+} 
+.bs-masonry-columns.c2 {
+    column-gap: 1.5rem;
+      columns: 2;
+}
+.bs-masonry-columns div {
+  display: inline-block;
+  width: 100%; 
+}
+.comments-area .comment-form-comment textarea{
+    height: 250px;
+}
+.col-lg-3 .bs-sidebar .widget_search .search-form{
+    flex-direction: column;
+    gap: 10px;
+}
+@media (max-width: 991.98px) {
+    .bs-masonry-columns.c2 { 
+        columns: 1;
+    }
+    .m-header {
+        padding: 0 10px;
+    }
+    .col-lg-3 .bs-sidebar {
+        margin-top: 0px;
+    }
+}
+@media (min-width: 992px) {
+    #sidebar-right {
+        padding-right: unset;
+        padding-left: 20px;
+    }
+}
+@media (max-width: 767.98px) {
+    .col-lg-3 .bs-sidebar {
+        margin-top: 40px;
+    }
+    .list-blog .bs-blog-category {
+        justify-content: center;
+    }
+}
